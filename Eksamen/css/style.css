@@ -93,7 +93,7 @@ nav li a:hover {
     border-radius: 25px;
 }
 
-
+/*Chat gpt spurt hvordan kan jeg referere til de forskellige inni #welcome-banner og jeg fikk svar om å bruke section:nth-child(1)*/
 #welcome-banner section:nth-child(1) {
     background-image: url("https://fastly.picsum.photos/id/334/2304/1536.jpg?hmac=ihrh84KbSSW-zvp-oRz8FGCVOWvPAD3SZvYPS0v3mv8");
     color: #000;
@@ -485,6 +485,8 @@ main h1{
     margin-left: 0.5rem;
 }
 
+
+/*chat gpt brukt, jeg spurte hvordan jeg kan få en dropdown menu og den svarte med å si bruk denne koden: .mat > summary  for å refereere*/
 .mat > summary {
     padding-top: 1.5rem;
     border: none;
