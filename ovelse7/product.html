@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link href="ikoner/css/fontawesome.css" rel="stylesheet">
+        <link href="ikoner/css/regular.css" rel="stylesheet">
+        <link href="ikoner/css/solid.css" rel="stylesheet">
+        <link href="ikoner/css/brands.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Product</title> 
+    </head>
+<body>
+    <header>
+        <nav>
+            <form>
+                <label for="search"></label>
+                <input type="search" placeholder="søk her" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="index.html#prod">Produkter</a></li>
+            </ul>
+            <a href="index.html" id="logo">Logo</a> 
+            <ul>
+                <li><a href="index.html#kato">Kategorier</a></li>
+                <li><a href="index.html#prod">Kontakt oss</a></li>
+            </ul>
+            <ul id="fontawesome-nav">
+                <li><i class="fa-regular fa-user"></i></li>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li>
+                    <a href="checkout.html" class="icon-button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main1" itemscope itemtype="https://schema.org/Product">
+        <figure id="breadcrumbs">
+            <ul itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="index.html"> 
+                        <span itemprop="name">Hjem <i class="fa-solid fa-chevron-right"></i></span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="index.html">
+                        <span itemprop="name"> Kategorier <i class="fa-solid fa-chevron-right"></i></span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="index.html">
+                        <span itemprop="name"> Produktnavn</span>
+                    </a>
+                    <meta itemprop="position" content="3">
+                </li>
+            </ul>
+        </figure>
+        <div class="left-content-container flex-items">
+            <img src="bilder/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies" id="active-img" itemprop="image" >
+            <img src="bilder/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies">
+            <img src="bilder/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies">
+            <img src="bilder/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies">
+        </div>
+        <section class="right-content-container flex-items">
+            <h3 itemprop="name">Produktnavn</h3>
+            <span id="brand-name">
+                <a href="index.html#prod">MERKENAVN</a>
+            </span>
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                <meta itemprop="reviewCount" content="100">
+                <meta itemprop="ratingValue" content="4.4">
+            </div>
+            <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <meta itemprop="priceCurrency" content="NOK">
+                <span itemprop="price" content="1499.00">1999,00 kr</span>
+            </div>
+            <p>Farge: beige</p>
+            <form>
+                <label for="size"></label>
+                <select name="size" id="size">
+                    <option value="36" itemprop="size">velg størrelse</option>
+                    <option value="36" itemprop="size">36</option>
+                    <option value="37" itemprop="size">37</option>
+                    <option value="38" itemprop="size">38</option>
+                    <option value="39" itemprop="size">39</option>
+                    <option value="40" itemprop="size">40</option>
+                    <option value="41" itemprop="size">41</option>
+                </select>
+                <button id="knapp">Legg i handlekurven</button>
+                <i id="heartknapp" class="fa-regular fa-heart"></i>
+            </form>
+            <details class="mat">
+                <summary>Matreiale og vedlikehold<i class="fa-solid fa-plus"></i></summary>
+                <ul>
+                    <li>Overmatriale: 95% vikose, 5% elastan</li>
+                    <li>Matreiale ermer: 100% polyester</li>
+                    <li>Matreiale: Jersey</li>
+                </ul>
+            </details>
+            <details class="pro">
+                <summary>Produkt detaljer<i class="fa-solid fa-plus"></i></summary>
+                <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+            </details>
+            <details class="sto">
+                <summary>Størellsetabell<i class="fa-solid fa-plus"></i></summary>
+                <p>
+                    Sjekk hvordan din vanlige størellse konverterer til andre 
+                    størellser i vår størrelse guide. Husk at dette kun er en generell
+                    guide og at størellsen kan varigere i forhold til merke og modell
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>EU</th>
+                            <th>INT</th>
+                            <th>BRYSTVIDDE</th>
+                            <th>LIVVIDDE</th>
+                            <th>HOFTEMÅL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>32</td>
+                            <td>XXS</td>
+                            <td>76</td>
+                            <td>63</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>XS</td>
+                            <td>80</td>
+                            <td>66</td>
+                            <td>89</td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>XS</td>
+                            <td>80</td>
+                            <td>66</td>
+                            <td>89</td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>M</td>
+                            <td>88</td>
+                            <td>72</td>
+                            <td>97</td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>L</td>
+                            <td>92</td>
+                            <td>76</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>XL</td>
+                            <td>96</td>
+                            <td>80</td>
+                            <td>103</td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>XXL</td>
+                            <td>100</td>
+                            <td>85</td>
+                            <td>106</td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>3XL</td>
+                            <td>104</td>
+                            <td>90</td>
+                            <td>109</td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>4XL</td>
+                            <td>110</td>
+                            <td>96.5</td>
+                            <td>114</td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>5XL</td>
+                            <td>116</td>
+                            <td>103</td>
+                            <td>119</td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td>6XL</td>
+                            <td>122</td>
+                            <td>109.5</td>
+                            <td>124</td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td>7XL</td>
+                            <td>128</td>
+                            <td>116</td>
+                            <td>130</td>
+                        </tr>
+                        <tr>
+                            <td>56</td>
+                            <td>8XL</td>
+                            <td>134</td>
+                            <td>122.5</td>
+                            <td>136</td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td>9XL</td>
+                            <td>140</td>
+                            <td>129</td>
+                            <td>148</td>
+                        </tr>
+                        <tr>
+                            <td>60</td>
+                            <td>10XL</td>
+                            <td>146</td>
+                            <td>135.5</td>
+                            <td>148</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+            <details class="anm">
+                <summary>Anmeldelser
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <span class="review-count">(45 reviews)</span>
+                </summary>
+                <section id="anmeldelser">
+                    <article>
+                        <h3>Lober Labrador</h3>
+                        <p>2024-10-02</p>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis, urna lobortis congue tristique, ante sem porttitor diam, vitae maximus dui magna a purus. Ut sit amet dapibus mauris. Etiam euismod ut erat ut placerat. Sed mattis vestibulum dignissim. Curabitur vel leo quis massa placerat blandit. Aliquam erat.</p>
+                    </article>
+                </section>
+            </details>
+        </section>
+        <section>
+            <h2>Lignende produkter</h2>
+            <div id="product-slider" class="slider-container">
+                <div class="slider-content">
+                    <article class="card-image">
+                        <figure>
+                            <picture>
+                                <img src="bilder/produktbilde.jpg" alt="Produkt bilde">
+                            </picture>
+                        </figure>
+                        <a href="#" class="card-title"><h3>Product name</h3></a>
+                        <p class="card-price">Kr 1999</p>
+                        <section class="card-reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="review-count">(45 reviews)</span>
+                        </section>
+                    </article>
+                    <article class="card-image">
+                        <figure>
+                            <picture>
+                                <img src="bilder/produktbilde.jpg" alt="Produkt bilde">
+                            </picture>
+                        </figure>
+                        <a href="#" class="card-title"><h3>Product name</h3></a>
+                        <p class="card-price">Kr 1999</p>
+                        <section class="card-reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="review-count">(45 reviews)</span>
+                        </section>
+                    </article>
+                    <article class="card-image">
+                        <figure>
+                            <picture>
+                                <img src="bilder/produktbilde.jpg" alt="Produkt bilde">
+                            </picture>
+                        </figure>
+                        <a href="#" class="card-title"><h3>Product name</h3></a>
+                        <p class="card-price">Kr 1999</p>
+                        <section class="card-reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="review-count">(45 reviews)</span>
+                        </section>
+                    </article>
+                    <article class="card-image">
+                        <figure>
+                            <picture>
+                                <img src="bilder/produktbilde.jpg" alt="Produkt bilde">
+                            </picture>
+                        </figure>
+                        <a href="#" class="card-title"><h3>Product name</h3></a>
+                        <p class="card-price">Kr 1999</p>
+                        <section class="card-reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="review-count">(45 reviews)</span>
+                        </section>
+                    </article>
+                    <article class="card-image">
+                        <figure>
+                            <picture>
+                                <img src="bilder/produktbilde.jpg" alt="Produkt bilde">
+                            </picture>
+                        </figure>
+                        <a href="#" class="card-title"><h3>Product name</h3></a>
+                        <p class="card-price">Kr 1999</p>
+                        <section class="card-reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="review-count">(45 reviews)</span>
+                        </section>
+                    </article>
+                    <article class="card-image">
+                        <figure>
+                            <picture>
+                                <img src="bilder/produktbilde.jpg" alt="Produkt bilde">
+                            </picture>
+                        </figure>
+                        <a href="#" class="card-title"><h3>Product name</h3></a>
+                        <p class="card-price">Kr 1999</p>
+                        <section class="card-reviews">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span class="review-count">(45 reviews)</span>
+                        </section>
+                    </article>
+                </div>
+            </div>    
+        </section>
+    </main>
+    <footer>
+        <a href="#" id="footer-logo">Logo</a> 
+        <p id="ingress">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+        <section>
+            <h3>Generelt</h3>
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i>Adresse: B R A Veien 4, 1757 Halden</li>
+                <li><i class="fa-solid fa-phone"></i>Telefon: 69 60 80 00</li>
+                <li><i class="fa-solid fa-envelope"></i>Email: halden@hiof.no</li>
+                <li><i class="fa-solid fa-clock"></i>Åpningstider: Stenger 15:00</li>
+            </ul>
+        </section>        
+        <section>
+            <h3>Snarveier</h3>
+            <ul id="snarveier">
+                <li>Produkter</li>
+                <li>Kategorier</li>
+                <li>Kontakt oss</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Sosiale medier</h3>
+            <ul id="some">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-square-instagram"></i></li>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-pinterest"></i></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
